@@ -79,11 +79,14 @@
     <Filter Include="Source Files\maths">
       <UniqueIdentifier>{8d7d167e-b50d-45da-af70-aeeab0c8ec07}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\os">
+      <UniqueIdentifier>{131c4e67-f196-4b4a-9475-559055f6877c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\os">
+      <UniqueIdentifier>{7bdb44f7-2617-4f27-a084-4db478231b97}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\cinder\Easing.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\InputSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -258,6 +261,18 @@
     <ClInclude Include="..\path\SplinePath.h">
       <Filter>Header Files\path</Filter>
     </ClInclude>
+    <ClInclude Include="..\os\Handler.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\Looper.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\MessageQueue.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\os\Message.h">
+      <Filter>Header Files\os</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\InputSource.cpp">
@@ -373,6 +388,18 @@
     </ClCompile>
     <ClCompile Include="..\utils\Utils.cpp">
       <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\Handler.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\Looper.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\os\MessageQueue.cpp">
+      <Filter>Source Files\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\PVRHelper.cpp">
+      <Filter>Source Files\texture</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -24,3 +24,10 @@ proguard-project.txt
 Debug/
 Release/
 ipch/
+
+/src/chronotext/lib
+
+/src/chronotext/vc10/lib
+
+/samples/Scalability/vc10/Scalability.vcxproj.user
+/src/chronotext/vc10/chronotext.vcxproj.user

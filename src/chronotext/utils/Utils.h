@@ -115,9 +115,9 @@ static std::string hexDump(const char *data, int size)
 static std::string prettyBytes(uint64_t numBytes, int precision = 2)
 {
     const char *abbrevs[] = { "TB", "GB", "MB", "KB" };
-    const size_t numAbbrevs = sizeof(abbrevs) / sizeof(abbrevs[0]);
+    const size_t numAbbrevs = 4;//sizeof(abbrevs) / sizeof(abbrevs[0]);
 
-    uint64_t maximum = 0x1L << (10 * (numAbbrevs+1));//pow(1024, numAbbrevs);
+    uint64_t maximum = 0x4000000000000; //0x1L << 10 << (4*10); //pow(1024, numAbbrevs);
     
     for (size_t i = 0; i < numAbbrevs; ++i)
     {

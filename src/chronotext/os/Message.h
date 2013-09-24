@@ -5,6 +5,7 @@
 #pragma once
 
 #include <memory>
+#include <stdint.h>
 
 class Handler;
 

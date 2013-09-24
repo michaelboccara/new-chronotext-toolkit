@@ -51,7 +51,7 @@
     <ClCompile>
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..;..\..\..\..\cinder_0.8.5_vc2010\include;..\..\..\..\cinder_0.8.5_vc2010\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;$(CinderPath)\include;$(CinderPath)\boost;$(CinderPath)\include\msw\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_WIN32_WINNT=0x0502;CURL_STATICLIB;CAIRO_WIN32_STATIC_BUILD;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -61,7 +61,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <ProgramDataBaseFileName>..\lib\cinder_d.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>..\lib\chronotext_d.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
@@ -78,7 +78,7 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\..;..\..\..\..\cinder_0.8.5_vc2010\include;..\..\..\..\cinder_0.8.5_vc2010\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;$(CinderPath)\include;$(CinderPath)\boost;$(CinderPath)\include\msw\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOMINMAX;_WIN32_WINNT=0x0502;CURL_STATICLIB;CAIRO_WIN32_STATIC_BUILD;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -121,6 +121,10 @@
     <ClInclude Include="..\InputSource.h" />
     <ClInclude Include="..\maths\Curves.h" />
     <ClInclude Include="..\maths\Matrix2D.h" />
+    <ClInclude Include="..\os\Handler.h" />
+    <ClInclude Include="..\os\Looper.h" />
+    <ClInclude Include="..\os\Message.h" />
+    <ClInclude Include="..\os\MessageQueue.h" />
     <ClInclude Include="..\path\ASPC.h" />
     <ClInclude Include="..\path\FollowablePath.h" />
     <ClInclude Include="..\path\SplinePath.h" />
@@ -174,10 +178,14 @@
     <ClCompile Include="..\incubator\ui\VerticalLayout.cpp" />
     <ClCompile Include="..\InputSource.cpp" />
     <ClCompile Include="..\maths\Matrix2D.cpp" />
+    <ClCompile Include="..\os\Handler.cpp" />
+    <ClCompile Include="..\os\Looper.cpp" />
+    <ClCompile Include="..\os\MessageQueue.cpp" />
     <ClCompile Include="..\path\ASPC.cpp" />
     <ClCompile Include="..\path\FollowablePath.cpp" />
     <ClCompile Include="..\path\SplinePath.cpp" />
     <ClCompile Include="..\ScreenManager.cpp" />
+    <ClCompile Include="..\texture\PVRHelper.cpp" />
     <ClCompile Include="..\texture\Sprite.cpp" />
     <ClCompile Include="..\texture\Texture.cpp" />
     <ClCompile Include="..\texture\TextureAtlas.cpp" />
