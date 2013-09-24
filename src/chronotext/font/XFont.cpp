@@ -1,5 +1,6 @@
 #include "chronotext/font/XFont.h"
 #include "chronotext/utils/Utils.h"
+#include <boost/foreach.hpp>
 
 using namespace ci;
 using namespace std;
@@ -304,7 +305,8 @@ namespace chronotext
         wstring characters;
         characters.reserve(glyphs.size());
         
-        for (auto entry : glyphs)
+		BOOST_FOREACH(auto entry, glyphs)
+        //for (auto entry : glyphs)
         {
             characters.push_back(entry.first);
         }

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92B5BE70-DCAA-40E4-92D8-CC2B95AA28BE}</ProjectGuid>
+    <RootNamespace>libflint</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)\include;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)\include;$(IncludePath)</IncludePath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..;..\..\..\..\cinder_0.8.5_vc2010\include;..\..\..\..\cinder_0.8.5_vc2010\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;NOMINMAX;_WIN32_WINNT=0x0502;CURL_STATICLIB;CAIRO_WIN32_STATIC_BUILD;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>..\lib\cinder_d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <RemoveObjects>LIBCMT</RemoveObjects>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..;..\..\..\..\cinder_0.8.5_vc2010\include;..\..\..\..\cinder_0.8.5_vc2010\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NOMINMAX;_WIN32_WINNT=0x0502;CURL_STATICLIB;CAIRO_WIN32_STATIC_BUILD;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\lib\msw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cinder\CinderApp.h" />
+    <ClInclude Include="..\cinder\CinderSketch.h" />
+    <ClInclude Include="..\cinder\CinderSketchSimple.h" />
+    <ClInclude Include="..\font\FontMatrix.h" />
+    <ClInclude Include="..\font\XFont.h" />
+    <ClInclude Include="..\font\XFontSequence.h" />
+    <ClInclude Include="..\incubator\ui\Button.h" />
+    <ClInclude Include="..\incubator\ui\ButtonStyle.h" />
+    <ClInclude Include="..\incubator\ui\Container.h" />
+    <ClInclude Include="..\incubator\ui\HorizontalLayout.h" />
+    <ClInclude Include="..\incubator\ui\HyperTextBox.h" />
+    <ClInclude Include="..\incubator\ui\HyperTextBoxStyle.h" />
+    <ClInclude Include="..\incubator\ui\Icon.h" />
+    <ClInclude Include="..\incubator\ui\LayoutStyle.h" />
+    <ClInclude Include="..\incubator\ui\Shape.h" />
+    <ClInclude Include="..\incubator\ui\ShapeStyle.h" />
+    <ClInclude Include="..\incubator\ui\TextBox.h" />
+    <ClInclude Include="..\incubator\ui\TextBoxStyle.h" />
+    <ClInclude Include="..\incubator\ui\Touchable.h" />
+    <ClInclude Include="..\incubator\ui\TouchableLink.h" />
+    <ClInclude Include="..\incubator\ui\TouchGroup.h" />
+    <ClInclude Include="..\incubator\ui\VerticalLayout.h" />
+    <ClInclude Include="..\InputSource.h" />
+    <ClInclude Include="..\maths\Curves.h" />
+    <ClInclude Include="..\maths\Matrix2D.h" />
+    <ClInclude Include="..\path\ASPC.h" />
+    <ClInclude Include="..\path\FollowablePath.h" />
+    <ClInclude Include="..\path\SplinePath.h" />
+    <ClInclude Include="..\ScreenManager.h" />
+    <ClInclude Include="..\texture\PVRHelper.h" />
+    <ClInclude Include="..\texture\Sprite.h" />
+    <ClInclude Include="..\texture\Texture.h" />
+    <ClInclude Include="..\texture\TextureAtlas.h" />
+    <ClInclude Include="..\texture\TextureAtlasAnimation.h" />
+    <ClInclude Include="..\texture\TextureAtlasManager.h" />
+    <ClInclude Include="..\texture\TextureData.h" />
+    <ClInclude Include="..\texture\TextureHelper.h" />
+    <ClInclude Include="..\texture\TextureManager.h" />
+    <ClInclude Include="..\texture\TextureRequest.h" />
+    <ClInclude Include="..\text\FontHelper.h" />
+    <ClInclude Include="..\text\FontManager.h" />
+    <ClInclude Include="..\text\LinkExtractor.h" />
+    <ClInclude Include="..\text\WordWrapper.h" />
+    <ClInclude Include="..\time\Clock.h" />
+    <ClInclude Include="..\time\DefaultTimeBase.h" />
+    <ClInclude Include="..\time\MasterClock.h" />
+    <ClInclude Include="..\time\TickingClock.h" />
+    <ClInclude Include="..\time\TimeBase.h" />
+    <ClInclude Include="..\utils\accel\AccelerationManager.h" />
+    <ClInclude Include="..\utils\accel\AccelEvent.h" />
+    <ClInclude Include="..\utils\glUtils.h" />
+    <ClInclude Include="..\utils\Hasher.h" />
+    <ClInclude Include="..\utils\MathUtils.h" />
+    <ClInclude Include="..\utils\stroke\StrokeHelper.h" />
+    <ClInclude Include="..\utils\stroke\TexturedTriangleStrip.h" />
+    <ClInclude Include="..\utils\SyslogStringStream.h" />
+    <ClInclude Include="..\utils\Timing.h" />
+    <ClInclude Include="..\utils\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cinder\CinderApp.cpp" />
+    <ClCompile Include="..\cinder\CinderSketchSimple.cpp" />
+    <ClCompile Include="..\font\FontMatrix.cpp" />
+    <ClCompile Include="..\font\XFont.cpp" />
+    <ClCompile Include="..\font\XFontSequence.cpp" />
+    <ClCompile Include="..\incubator\ui\Button.cpp" />
+    <ClCompile Include="..\incubator\ui\Container.cpp" />
+    <ClCompile Include="..\incubator\ui\HorizontalLayout.cpp" />
+    <ClCompile Include="..\incubator\ui\HyperTextBox.cpp" />
+    <ClCompile Include="..\incubator\ui\Icon.cpp" />
+    <ClCompile Include="..\incubator\ui\Shape.cpp" />
+    <ClCompile Include="..\incubator\ui\TextBox.cpp" />
+    <ClCompile Include="..\incubator\ui\Touchable.cpp" />
+    <ClCompile Include="..\incubator\ui\TouchableLink.cpp" />
+    <ClCompile Include="..\incubator\ui\TouchGroup.cpp" />
+    <ClCompile Include="..\incubator\ui\VerticalLayout.cpp" />
+    <ClCompile Include="..\InputSource.cpp" />
+    <ClCompile Include="..\maths\Matrix2D.cpp" />
+    <ClCompile Include="..\path\ASPC.cpp" />
+    <ClCompile Include="..\path\FollowablePath.cpp" />
+    <ClCompile Include="..\path\SplinePath.cpp" />
+    <ClCompile Include="..\ScreenManager.cpp" />
+    <ClCompile Include="..\texture\Sprite.cpp" />
+    <ClCompile Include="..\texture\Texture.cpp" />
+    <ClCompile Include="..\texture\TextureAtlas.cpp" />
+    <ClCompile Include="..\texture\TextureAtlasAnimation.cpp" />
+    <ClCompile Include="..\texture\TextureAtlasManager.cpp" />
+    <ClCompile Include="..\texture\TextureHelper.cpp" />
+    <ClCompile Include="..\texture\TextureManager.cpp" />
+    <ClCompile Include="..\text\FontHelper.cpp" />
+    <ClCompile Include="..\text\FontManager.cpp" />
+    <ClCompile Include="..\text\WordWrapper.cpp" />
+    <ClCompile Include="..\time\Clock.cpp" />
+    <ClCompile Include="..\time\MasterClock.cpp" />
+    <ClCompile Include="..\time\TickingClock.cpp" />
+    <ClCompile Include="..\utils\glUtils.cpp" />
+    <ClCompile Include="..\utils\MathUtils.cpp" />
+    <ClCompile Include="..\utils\Utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

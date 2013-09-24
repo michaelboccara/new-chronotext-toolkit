@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\cinder">
+      <UniqueIdentifier>{139ea08c-595d-45fa-a56d-486cc73daea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\font">
+      <UniqueIdentifier>{e5b5a32f-b615-45ed-8bb7-2949eff1033f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\incubator">
+      <UniqueIdentifier>{6eb6c0ff-2bd7-4d48-8c25-b90a830c268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\path">
+      <UniqueIdentifier>{8fccc9d2-0900-44f5-a8c5-b5f2086fcabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\text">
+      <UniqueIdentifier>{ece74552-5bc7-4650-9f3a-b1b7a7d4f698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\texture">
+      <UniqueIdentifier>{d36aff67-4c90-4a75-8906-f2b1027324d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\time">
+      <UniqueIdentifier>{7f6a4b98-627b-4d08-96a0-87ebfeddde1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{74ae8331-1006-49a4-a773-026a22a3a233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cinder">
+      <UniqueIdentifier>{eadaf108-d75b-4cad-9cb5-85bd501476b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\font">
+      <UniqueIdentifier>{93b1ffd1-49bf-44ae-b5ec-a02fadc55f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\incubator">
+      <UniqueIdentifier>{c02447e5-f1df-4b96-80a0-92046dfb0a01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{7cf401a1-8ee7-49d4-bb9e-ffa707711e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\time">
+      <UniqueIdentifier>{61056cd8-5044-4d65-961c-f4191ae71dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\texture">
+      <UniqueIdentifier>{8ecf9a4b-82f3-43ce-8e3a-df096b273c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\text">
+      <UniqueIdentifier>{0312e910-efed-4deb-8bc1-e95304ad635a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\path">
+      <UniqueIdentifier>{9b67c237-18b1-4633-b3ce-e1c3d4865861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\incubator\ui">
+      <UniqueIdentifier>{4ce711a6-c412-485e-ac96-9458f20d01f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\maths">
+      <UniqueIdentifier>{37a46665-747c-44f3-b221-370bee7a3596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\accel">
+      <UniqueIdentifier>{22d95c73-5c45-4445-ab25-0dc3e6fee3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\stroke">
+      <UniqueIdentifier>{96df5c1e-6cc0-406c-8b24-a60ae62a6567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\incubator\ui">
+      <UniqueIdentifier>{c8a24304-33b3-45a8-b4c8-abf7fcf39206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\maths">
+      <UniqueIdentifier>{8d7d167e-b50d-45da-af70-aeeab0c8ec07}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cinder\Easing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InputSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ScreenManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cinder\CinderApp.h">
+      <Filter>Header Files\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cinder\CinderSketch.h">
+      <Filter>Header Files\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cinder\CinderSketchSimple.h">
+      <Filter>Header Files\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\font\FontMatrix.h">
+      <Filter>Header Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\font\XFont.h">
+      <Filter>Header Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\font\XFontSequence.h">
+      <Filter>Header Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\Button.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\ButtonStyle.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\Container.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\HorizontalLayout.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\HyperTextBox.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\HyperTextBoxStyle.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\Icon.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\LayoutStyle.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\Shape.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\ShapeStyle.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\TextBox.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\TextBoxStyle.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\Touchable.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\TouchableLink.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\TouchGroup.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\incubator\ui\VerticalLayout.h">
+      <Filter>Header Files\incubator\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\maths\Curves.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\maths\Matrix2D.h">
+      <Filter>Header Files\maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\glUtils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\Hasher.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\MathUtils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\SyslogStringStream.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\Timing.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\Utils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\accel\AccelerationManager.h">
+      <Filter>Header Files\utils\accel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\accel\AccelEvent.h">
+      <Filter>Header Files\utils\accel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\stroke\StrokeHelper.h">
+      <Filter>Header Files\utils\stroke</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\stroke\TexturedTriangleStrip.h">
+      <Filter>Header Files\utils\stroke</Filter>
+    </ClInclude>
+    <ClInclude Include="..\time\Clock.h">
+      <Filter>Header Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\time\DefaultTimeBase.h">
+      <Filter>Header Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\time\MasterClock.h">
+      <Filter>Header Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\time\TickingClock.h">
+      <Filter>Header Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\time\TimeBase.h">
+      <Filter>Header Files\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\PVRHelper.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\Sprite.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\Texture.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureAtlas.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureAtlasAnimation.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureAtlasManager.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureData.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureHelper.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureManager.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\texture\TextureRequest.h">
+      <Filter>Header Files\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\text\FontHelper.h">
+      <Filter>Header Files\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\text\FontManager.h">
+      <Filter>Header Files\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\text\LinkExtractor.h">
+      <Filter>Header Files\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\text\WordWrapper.h">
+      <Filter>Header Files\text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\path\ASPC.h">
+      <Filter>Header Files\path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\path\FollowablePath.h">
+      <Filter>Header Files\path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\path\SplinePath.h">
+      <Filter>Header Files\path</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\InputSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ScreenManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cinder\CinderApp.cpp">
+      <Filter>Source Files\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cinder\CinderSketchSimple.cpp">
+      <Filter>Source Files\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\font\FontMatrix.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\font\XFont.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\font\XFontSequence.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\Button.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\Container.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\HorizontalLayout.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\HyperTextBox.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\Icon.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\Shape.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\TextBox.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\Touchable.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\TouchableLink.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\TouchGroup.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\incubator\ui\VerticalLayout.cpp">
+      <Filter>Source Files\incubator\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\maths\Matrix2D.cpp">
+      <Filter>Source Files\maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\path\ASPC.cpp">
+      <Filter>Source Files\path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\path\FollowablePath.cpp">
+      <Filter>Source Files\path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\path\SplinePath.cpp">
+      <Filter>Source Files\path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\text\FontHelper.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\text\FontManager.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\text\WordWrapper.cpp">
+      <Filter>Source Files\text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\Sprite.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\Texture.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\TextureAtlas.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\TextureAtlasAnimation.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\TextureAtlasManager.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\TextureHelper.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\texture\TextureManager.cpp">
+      <Filter>Source Files\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\time\Clock.cpp">
+      <Filter>Source Files\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\time\MasterClock.cpp">
+      <Filter>Source Files\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\time\TickingClock.cpp">
+      <Filter>Source Files\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\glUtils.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\MathUtils.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\Utils.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

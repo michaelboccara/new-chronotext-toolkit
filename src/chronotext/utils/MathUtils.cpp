@@ -1,4 +1,5 @@
 #include "chronotext/utils/MathUtils.h"
+#include <boost/foreach.hpp>
 
 using namespace std;
 using namespace ci;
@@ -18,7 +19,8 @@ void MathUtils::transformVertices(const vector<Vec2f> &source, vector<Vec2f> &ta
     target.clear();
     target.reserve(source.size());
     
-    for (auto vertex : source)
+	BOOST_FOREACH(auto vertex, source)
+    //for (auto vertex : source)
     {
         target.push_back(matrix.transformPoint(vertex));
     }
@@ -31,7 +33,8 @@ Rectf MathUtils::getBoundingBox(const vector<Vec2f> &polygon)
     float maxX = numeric_limits<float>::min();
     float maxY = numeric_limits<float>::min();
     
-    for (auto point : polygon)
+    //for (auto point : polygon)
+	BOOST_FOREACH(auto point, polygon)
     {
         const float x = point.x;
         const float y = point.y;
@@ -182,7 +185,8 @@ bool MathUtils::isPointInside(const Vec2f &point, const vector<vector<Vec2f>> &p
 {
     int numPathsInside = 0;
     
-    for (auto polygon : polygons)
+    //for (auto polygon : polygons)
+    BOOST_FOREACH(auto polygon, polygons)
     {
         if (isPointInside(point, polygon))
         {
