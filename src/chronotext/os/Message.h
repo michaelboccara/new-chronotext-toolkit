@@ -7,6 +7,10 @@
 #include <memory>
 #include <string>
 
+#if defined(CINDER_MSW)
+#include <stdint.h>
+#endif
+
 class Handler;
 
 class Message
