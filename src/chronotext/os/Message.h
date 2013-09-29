@@ -4,12 +4,12 @@
 
 #pragma once
 
-#include <memory>
-#include <string>
-
-#if defined(CINDER_MSW)
+#ifdef _WIN32
 #include <stdint.h>
 #endif
+
+#include <memory>
+#include <string>
 
 class Handler;
 
