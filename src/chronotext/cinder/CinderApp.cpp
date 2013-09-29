@@ -71,7 +71,23 @@ void CinderApp::draw()
         update();
     }
 
-    sketch->draw();
+	switch(needDraw)
+	{
+	case 0:
+		break;
+	case 1:
+		sketch->draw();
+		needDraw = 2;
+		break;
+	case 2:
+		sketch->draw();
+		needDraw = 0;
+		break;
+	case -1:
+	default:
+		sketch->draw();
+		break;
+	}
 }
 
 void CinderApp::mouseDown(MouseEvent event)

@@ -17,13 +17,16 @@ class CinderApp : public ci::app::AppNative
     void start();
     void stop();
 
+	char needDraw;
+
 public:
     CinderSketch *sketch;
     
     CinderApp()
     :
     startCount(0),
-    updateCount(0)
+    updateCount(0),
+	needDraw(-1)
     {}
 
     void setup();
@@ -50,4 +53,6 @@ public:
     
     virtual void receiveMessageFromSketch(int what, const std::string &body) {}
     void sendMessageToSketch(int what, const std::string &body);
+
+	void requestDraw() {needDraw = 1;}
 };
