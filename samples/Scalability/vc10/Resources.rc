@@ -1,0 +1,5 @@
+#include "../src/Resources.h"
+
+RES_FRAME_ROCOCO
+RES_LOUIS_XIV
+
